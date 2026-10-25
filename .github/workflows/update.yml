@@ -1,0 +1,94 @@
+name: Medir, cerrar y publicar
+on:
+  push:
+    branches: [main]
+  schedule:
+    # UTC: Argentina UTC-3. Daily 20:45 ART.
+    - cron: '45 23 * * *'
+    # Sunday 21:00 ART = Monday 00:00 UTC.
+    - cron: '0 0 * * 1'
+    # Recovery for delayed/dropped close or deploy. Does not scrape Instagram.
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      extract:
+        description: Consultar los cinco perfiles públicos
+        type: boolean
+        default: true
+      csv:
+        description: 'CSV opcional: account,observed_at,followers,approximate,evidence (con encabezado)'
+        type: string
+        required: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: instagram-data-and-pages
+  cancel-in-progress: false
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      BASE_PATH: /${{ github.event.repository.name }}/
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Ruta para repositorio raíz de usuario
+        if: endsWith(github.event.repository.name, '.github.io')
+        run: echo 'BASE_PATH=/' >> "$GITHUB_ENV"
+      - run: npx playwright install --with-deps chromium
+      - name: Importar respaldo manual
+        if: github.event_name == 'workflow_dispatch' && inputs.csv != ''
+        env:
+          MANUAL_CSV: ${{ inputs.csv }}
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; fs.writeFileSync('manual.csv',process.env.MANUAL_CSV)"
+          npm run import:csv -- manual.csv
+          rm manual.csv
+      - name: Extraer perfiles
+        if: github.event.schedule == '45 23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.extract)
+        run: npm run extract
+      - name: Cerrar solamente períodos vencidos
+        run: npm run close
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:e2e
+      - name: Conservar historial
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/store.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: observaciones y cierres semanales'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-${{ github.run_id }}
+          path: |
+            logs/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14
