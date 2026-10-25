@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "initializedAt": "2026-10-24T20:00:00.000Z",
+  "measurements": [
+    {
+      "account": "juanofabiani",
+      "at": "2026-10-24T20:08:18.504Z",
+      "value": 11700,
+      "approximate": true,
+      "source": "public",
+      "evidence": "visible header: 11.7K followers"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-10-24T20:08:19.504Z",
+      "value": 48100,
+      "approximate": true,
+      "source": "public",
+      "evidence": "visible header: 48.1K followers"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-10-24T20:08:20.448Z",
+      "value": 7676,
+      "approximate": false,
+      "source": "public",
+      "evidence": "visible header: 7,676 followers"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-10-24T20:08:21.546Z",
+      "value": 3788,
+      "approximate": false,
+      "source": "public",
+      "evidence": "visible header: 3,788 followers"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-10-24T20:08:22.622Z",
+      "value": 10200,
+      "approximate": true,
+      "source": "public",
+      "evidence": "visible header: 10.2K followers"
+    }
+  ],
+  "attempts": [
+    {
+      "account": "juanofabiani",
+      "at": "2026-10-24T20:07:37.595Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-10-24T20:07:38.685Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-10-24T20:07:39.755Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-10-24T20:07:40.876Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-10-24T20:07:41.857Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-10-24T20:07:58.269Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias: 12K Followers | 12K Followers | 11.7K followers"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-10-24T20:07:59.370Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias: 48K Followers | 48K Followers | 48.1K followers"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-10-24T20:08:00.339Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias: 7,657 Followers | 7,657 Followers | 7,676 followers"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-10-24T20:08:01.320Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias: 3,758 Followers | 3,758 Followers | 3,788 followers"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-10-24T20:08:02.405Z",
+      "status": "error",
+      "message": "Error: Cifras públicas contradictorias: 10K Followers | 10K Followers | 10.2K followers"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-10-24T20:08:18.504Z",
+      "status": "ok",
+      "message": "11700 (aproximado; no clasificable)"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-10-24T20:08:19.504Z",
+      "status": "ok",
+      "message": "48100 (aproximado; no clasificable)"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-10-24T20:08:20.448Z",
+      "status": "ok",
+      "message": "7676"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-10-24T20:08:21.546Z",
+      "status": "ok",
+      "message": "3788"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-10-24T20:08:22.622Z",
+      "status": "ok",
+      "message": "10200 (aproximado; no clasificable)"
+    }
+  ],
+  "weeks": []
+}
