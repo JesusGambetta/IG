@@ -403,6 +403,36 @@
       "at": "2026-11-02T02:45:32.175Z",
       "status": "error",
       "message": "Error: HTTP 429"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-11-03T04:03:02.943Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-11-03T04:03:04.379Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-11-03T04:03:05.363Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-03T04:03:06.441Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-11-03T04:03:07.430Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
     }
   ],
   "weeks": [
