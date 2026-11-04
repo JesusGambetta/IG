@@ -41,6 +41,14 @@
       "approximate": true,
       "source": "public",
       "evidence": "visible header: 10.2K followers"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-04T03:19:34.340Z",
+      "value": 3808,
+      "approximate": false,
+      "source": "public",
+      "evidence": "visible header: 3,808 followers"
     }
   ],
   "attempts": [
@@ -433,6 +441,36 @@
       "at": "2026-11-03T04:03:07.430Z",
       "status": "error",
       "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-11-04T03:19:33.303Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-11-04T03:19:33.500Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-11-04T03:19:33.683Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-04T03:19:34.340Z",
+      "status": "ok",
+      "message": "3808"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-11-04T03:19:34.517Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
     }
   ],
   "weeks": [
