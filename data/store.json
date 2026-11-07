@@ -531,6 +531,36 @@
       "at": "2026-11-06T03:40:46.106Z",
       "status": "error",
       "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-11-07T03:14:01.031Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-11-07T03:14:01.446Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-11-07T03:14:01.917Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-07T03:14:02.303Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-11-07T03:14:02.730Z",
+      "status": "error",
+      "message": "Error: Acceso restringido o inicio de sesión requerido"
     }
   ],
   "weeks": [
