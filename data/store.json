@@ -651,6 +651,35 @@
           "reason": "Sin base exacta dentro de las 36 h previas al inicio"
         }
       ]
+    },
+    {
+      "id": "2026-11-02",
+      "start": "2026-11-02T03:00:00.000Z",
+      "close": "2026-11-09T00:00:00.000Z",
+      "publishedAt": "2026-11-09T02:42:43.543Z",
+      "entries": [],
+      "excluded": [
+        {
+          "account": "juanofabiani",
+          "reason": "Sin base exacta dentro de las 36 h previas al inicio"
+        },
+        {
+          "account": "mariano.cascallares",
+          "reason": "Sin base exacta dentro de las 36 h previas al inicio"
+        },
+        {
+          "account": "paulaeichel",
+          "reason": "Sin base exacta dentro de las 36 h previas al inicio"
+        },
+        {
+          "account": "nicolas.jawtuschenko",
+          "reason": "Sin base exacta dentro de las 36 h previas al inicio"
+        },
+        {
+          "account": "leperejose",
+          "reason": "Sin base exacta dentro de las 36 h previas al inicio"
+        }
+      ]
     }
   ]
 }
