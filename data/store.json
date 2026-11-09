@@ -591,6 +591,36 @@
       "at": "2026-11-08T02:43:31.291Z",
       "status": "error",
       "message": "Error: HTTP 429"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-11-09T02:59:11.063Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-11-09T02:59:11.267Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-11-09T02:59:11.492Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-09T02:59:11.697Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-11-09T02:59:11.920Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
     }
   ],
   "weeks": [
