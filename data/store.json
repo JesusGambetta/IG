@@ -951,6 +951,36 @@
       "at": "2026-11-20T04:19:05.027Z",
       "status": "error",
       "message": "Error: Acceso restringido o inicio de sesión requerido"
+    },
+    {
+      "account": "juanofabiani",
+      "at": "2026-11-21T04:18:03.091Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "mariano.cascallares",
+      "at": "2026-11-21T04:18:03.365Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "paulaeichel",
+      "at": "2026-11-21T04:18:03.640Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "nicolas.jawtuschenko",
+      "at": "2026-11-21T04:18:03.898Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
+    },
+    {
+      "account": "leperejose",
+      "at": "2026-11-21T04:18:04.178Z",
+      "status": "error",
+      "message": "Error: HTTP 429"
     }
   ],
   "weeks": [
